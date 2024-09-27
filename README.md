@@ -8,12 +8,12 @@ She is writing a series of articles at [Optivem](https://journal.optivem.com/) w
 
 The purpose is to learn that process.
 
-## Todo App
+## Sample Todo App
 
 We will create a todo app. This project will have two repositories
 
-1. Vue Frontend
-2. Node/Express Backend
+1. [Tasker UI](https://github.com/naumanzchaudhry/tasker-ui)
+2. [Tasker API](https://github.com/naumanzchaudhry/tasker-api)
 
 Check [Project Board](https://github.com/users/naumanzchaudhry/projects/2) for tickets
 
