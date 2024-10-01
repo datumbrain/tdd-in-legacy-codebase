@@ -2,7 +2,7 @@
 
 ## Context & Purpose
 
-I found [Valentina](https://github.com/valentinacs/valentina) sharing her thoughts & process on how we can transform legacy codebase into a testable one. And eventually use TDD to gain confidence in software delivery
+I found [Valentina](https://www.linkedin.com/in/valentinajemuovic/) sharing her thoughts & process on how we can transform legacy codebase into a testable one. And eventually use TDD to gain confidence in software delivery
 
 She is writing a series of articles at [Optivem](https://journal.optivem.com/) which will guide the readers through the entire process.
 
