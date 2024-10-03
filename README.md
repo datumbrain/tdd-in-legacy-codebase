@@ -1,12 +1,20 @@
 # TDD in Legacy Code Transformation
 
+## Pipeline Dashboard
+Pipeline dashboard for sample app we will create to transform legacy codebase into testable one
+
+| Component      | Commit Stage                                                                                                                                                                   |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Tasker UI  | [![Build & Publish](https://github.com/naumanzchaudhry/tasker-ui/actions/workflows/ci.yml/badge.svg)](https://github.com/naumanzchaudhry/tasker-ui/actions/workflows/ci.yml)   |
+| Tasker API | [![Build & Publish](https://github.com/naumanzchaudhry/tasker-api/actions/workflows/ci.yml/badge.svg)](https://github.com/naumanzchaudhry/tasker-api/actions/workflows/ci.yml) |
+
 ## Context & Purpose
 
 I found [Valentina](https://www.linkedin.com/in/valentinajemuovic/) sharing her thoughts & process on how we can transform legacy codebase into a testable one. And eventually use TDD to gain confidence in software delivery
 
-She is writing a series of articles at [Optivem](https://journal.optivem.com/) which will guide the readers through the entire process.
+She is writing a series of articles at [Optivem](https://journal.optivem.com/) which will guide the readers through the entire process. The purpose is to learn that process.
 
-The purpose is to learn that process.
+Checkout [Complete Series Outline](https://substack.com/home/post/p-149666874) to understand each stage and it's sub processes
 
 ## Relevant Projects
 
