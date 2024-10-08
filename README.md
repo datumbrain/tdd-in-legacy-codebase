@@ -21,6 +21,7 @@ Checkout [Complete Series Outline](https://substack.com/home/post/p-149666874) t
 
 1. [Tasker UI](https://github.com/naumanzchaudhry/tasker-ui)
 2. [Tasker API](https://github.com/naumanzchaudhry/tasker-api)
+3. [Acceptance Tests](https://github.com/naumanzchaudhry/tasker-acceptance-tests)
 
 ## Todo Sample App Features
 
