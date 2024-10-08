@@ -1,0 +1,55 @@
+name: Deploy UI and API
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Deployment environment'
+        required: true
+        default: 'uat'
+        type: choice
+        options:
+          - uat
+          - prod
+
+jobs:
+  deploy_ui_and_api:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check environment
+        run: echo "Deploying to ${{ github.event.inputs.environment }} environment"
+
+      # Deploy UI
+      - name: Trigger UI Deployment
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const branchToDeploy = '${{ github.event.inputs.environment }}' === 'prod' ? 'main' : 'uat';
+            const response = await github.actions.createWorkflowDispatch({
+              owner: 'naumanzchaudhry',
+              repo: 'tasker-ui',        
+              workflow_id: 'deploy.yml',
+              ref: branchToDeploy,
+              inputs: {
+                environment: "${{ github.event.inputs.environment }}"
+              }
+            });
+            console.log('Triggered UI deployment:', response.status);
+
+      # Deploy API
+      - name: Trigger API Deployment
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const branchToDeploy = '${{ github.event.inputs.environment }}' === 'prod' ? 'main' : 'uat';
+            const response = await github.actions.createWorkflowDispatch({
+              owner: 'naumanzchaudhry',
+              repo: 'tasker-api',
+              workflow_id: 'deploy.yml',
+              ref: branchToDeploy,
+              inputs: {
+                environment: "${{ github.event.inputs.environment }}"
+              }
+            });
+            console.log('Triggered API deployment:', response.status);
