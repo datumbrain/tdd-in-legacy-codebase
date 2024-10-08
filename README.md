@@ -1,12 +1,13 @@
 # TDD in Legacy Code Transformation
 
 ## Pipeline Dashboard
+
 Pipeline dashboard for sample app we will create to transform legacy codebase into testable one
 
-| Component      | Commit Stage                                                                                                                                                                   |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Tasker UI  | [![Build & Publish](https://github.com/naumanzchaudhry/tasker-ui/actions/workflows/ci.yml/badge.svg)](https://github.com/naumanzchaudhry/tasker-ui/actions/workflows/ci.yml)   |
-| Tasker API | [![Build & Publish](https://github.com/naumanzchaudhry/tasker-api/actions/workflows/ci.yml/badge.svg)](https://github.com/naumanzchaudhry/tasker-api/actions/workflows/ci.yml) |
+| Component  | Commit Stage                                                                                                                                                                   | UAT Release Stage                                                                                                                         | Production Release Stage                                                                                                                           |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Tasker UI  | [![Build & Publish](https://github.com/naumanzchaudhry/tasker-ui/actions/workflows/ci.yml/badge.svg)](https://github.com/naumanzchaudhry/tasker-ui/actions/workflows/ci.yml)   | ![UAT](https://github.com/naumanzchaudhry/tasker-ui/actions/workflows/deploy.yml/badge.svg?branch=uat&event=workflow_dispatch&label=uat)  | ![Production](https://github.com/naumanzchaudhry/tasker-ui/actions/workflows/deploy.yml/badge.svg?branch=main&event=workflow_dispatch&label=prod)  |
+| Tasker API | [![Build & Publish](https://github.com/naumanzchaudhry/tasker-api/actions/workflows/ci.yml/badge.svg)](https://github.com/naumanzchaudhry/tasker-api/actions/workflows/ci.yml) | ![UAT](https://github.com/naumanzchaudhry/tasker-api/actions/workflows/deploy.yml/badge.svg?branch=uat&event=workflow_dispatch&label=uat) | ![Production](https://github.com/naumanzchaudhry/tasker-api/actions/workflows/deploy.yml/badge.svg?branch=main&event=workflow_dispatch&label=prod) |
 
 ## Context & Purpose
 
