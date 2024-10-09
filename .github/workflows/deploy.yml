@@ -26,7 +26,7 @@ jobs:
         with:
           script: |
             const branchToDeploy = '${{ github.event.inputs.environment }}' === 'prod' ? 'main' : 'uat';
-            const response = await github.actions.createWorkflowDispatch({
+            const response = await github.rest.actions.createWorkflowDispatch({
               owner: 'naumanzchaudhry',
               repo: 'tasker-ui',        
               workflow_id: 'deploy.yml',
@@ -43,7 +43,7 @@ jobs:
         with:
           script: |
             const branchToDeploy = '${{ github.event.inputs.environment }}' === 'prod' ? 'main' : 'uat';
-            const response = await github.actions.createWorkflowDispatch({
+            const response = await github.rest.actions.createWorkflowDispatch({
               owner: 'naumanzchaudhry',
               repo: 'tasker-api',
               workflow_id: 'deploy.yml',
